@@ -299,9 +299,10 @@
 
       
         
-          
-            <hr>
-<h2 id="title-使用hexo-github搭建博客"><a href="#title-使用hexo-github搭建博客" class="headerlink" title="title:使用hexo+github搭建博客"></a>title:使用hexo+github搭建博客</h2><h1 id="使用hexo-github搭建博客"><a href="#使用hexo-github搭建博客" class="headerlink" title="使用hexo+github搭建博客"></a>使用hexo+github搭建博客</h1><p>电脑系统：window 10 家庭版，64位</p>
+          <hr>
+<p>title:使用hexo+github搭建博客</p>
+<hr>
+<h1 id="使用hexo-github搭建博客"><a href="#使用hexo-github搭建博客" class="headerlink" title="使用hexo+github搭建博客"></a>使用hexo+github搭建博客</h1><p>电脑系统：window 10 家庭版，64位</p>
 <p>##1.安装node.js（最新版）和node.js环境  ##<br><img src="https://i.imgur.com/RDlkmu5.png" alt=""></p>
 <p>成功界面</p>
 <h2 id="2-安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择"><a href="#2-安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择" class="headerlink" title="2.安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择"></a>2.安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择<img src="https://i.imgur.com/4DehCOS.png" alt=""></h2><p>不懂看下面链接或者自行百度<br><a href="https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html</a> </p>
@@ -310,34 +311,17 @@
 <h4 id="cd-ssh"><a href="#cd-ssh" class="headerlink" title="cd~/.ssh"></a>cd~/.ssh</h4><p>~这个符号，表示在用户目录下<br>执行代码如果提示：No such file or directory 说明你是第一次使用git。</p>
 <h2 id="生产新的SSH-Key配置"><a href="#生产新的SSH-Key配置" class="headerlink" title="生产新的SSH Key配置"></a>生产新的SSH Key配置</h2><p>在Git Bash(在任意文件夹中鼠标右击选择Git Bash Here打开)执行代码</p>
 <h4 id="ssh-keygen-t-rsa-C-“自己的邮箱号”"><a href="#ssh-keygen-t-rsa-C-“自己的邮箱号”" class="headerlink" title="ssh-keygen -t rsa -C “自己的邮箱号”"></a>ssh-keygen -t rsa -C “自己的邮箱号”</h4><p>成功后会生成个文件id_rsa（私钥）。然后找到个文件，默认都在C盘 &gt; 用户 &gt; xxx &gt; .ssh 里面 （xxx是计算机用户名字）<br>然后用记事本把id_rsa这个文件打开，全选复制出来；<br>然后打开在github上添加SSH Key，登录github账号，点击右上角用户头像，选择setting（设置）&gt; SSH and GPG keys &gt; NewSSH key<br>然后把刚才复制的内容粘贴到key这里就可以了，title填不填都行。</p>
-<h4 id="Github新建项目"><a href="#Github新建项目" class="headerlink" title="Github新建项目"></a>Github新建项目</h4><p>项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initialize this repository with a README<br><img src="https://i.imgur.com/hIYU8Li.png" alt=""><br>在建好的项目右侧有个settings按钮，点击它，向下拉到GitHub Pages，你会看到那边有个网址，你将会惊奇的发现该项目已经被部署到网络上，能够通过外网来访问它。</p>
-<p>##安装hexo<br>我是在D盘建了一个blog文件夹。然后通过Git Bash进入到该文件夹里面         输入npm install hexo -g，开始安装Hexo。</p>
-<p>   输入hexo -v，检查hexo是否安装成功</p>
-<p>   输入hexo init，初始化该文件夹（必须文件夹是空的）</p>
-<h2 id="看到后面的“Start-blogging-with-Hexo！就是成功了”"><a href="#看到后面的“Start-blogging-with-Hexo！就是成功了”" class="headerlink" title="看到后面的“Start blogging with Hexo！就是成功了”"></a>看到后面的“Start blogging with Hexo！就是成功了”</h2><p>输入npm install，安装所需要的组件（会出现一些代码，没有的应该是出问题了）我就是网络代理出现了问题。</p>
-<p>   有问题可以试试npm config get registry</p>
-<p>   输入hexo g，首次体验Hexo</p>
-<p>   输入hexo s，开启服务器，访问该网址，正式体验Hexo<br><img src="https://i.imgur.com/lsmAo5T.png" alt=""><br>问题：假如页面一直无法跳转，那么可能端口被占用了。此时我们ctrl+c停止服务器，接着输入“hexo server -p 端口号”来改变端口号</p>
-<p> <img src="https://i.imgur.com/u7rKlkf.png" alt=""><br>出现如上图就成功了</p>
-<h2 id="将Hexo与Github-page联系起来，设置Git的user-name和email（如果是第一次的话）"><a href="#将Hexo与Github-page联系起来，设置Git的user-name和email（如果是第一次的话）" class="headerlink" title="将Hexo与Github page联系起来，设置Git的user name和email（如果是第一次的话）"></a>将Hexo与Github page联系起来，设置Git的user name和email（如果是第一次的话）</h2><h4 id="git-confing-–global-user-name-“用户名”"><a href="#git-confing-–global-user-name-“用户名”" class="headerlink" title="git confing –global user.name “用户名”"></a>git confing –global user.name “用户名”</h4><h4 id="git-config-–global-user-email-“邮箱号”"><a href="#git-config-–global-user-email-“邮箱号”" class="headerlink" title="git config –global user.email “邮箱号”"></a>git config –global user.email “邮箱号”</h4><p>输入cd ~/.ssh，检查是否由.ssh的文件夹</p>
-<p>输入ls，列出该文件下的内容。<br>出现id-rsa  ……..  known-hosts就成功了</p>
-<p> 输入ssh-keygen -t rsa -C “<a href="mailto:91797406500@qq.com" target="_blank" rel="noopener">91797406500@qq.com</a>”，连续三个回车，生成密钥，最后得到了个文件：id_rsa和（默认存储路径是：C:\Users\Administrator.ssh）。<br><img src="https://i.imgur.com/KYB5LPM.jpg" alt=""><br>y继续</p>
-<p>输入eval “$(ssh-agent -s)”，添加密钥到ssh-agent</p>
-<p>再输入ssh-add ~/.ssh/id_rsa，添加生成的SSH key到ssh-agent</p>
-<p>登录Github，点击头像下的settings，添加ssh</p>
-<p>新建一个new ssh key，将id_rsa文件里的内容复制上去</p>
-<p>输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
-<p>配置Deployment，在其文件夹中，找到_config.yml文件，修改repo值（在末尾）<img src="https://i.imgur.com/zNszEJM.png" alt=""></p>
-<p>repo值是你在github项目里的ssh（右下角）<img src="https://i.imgur.com/4tlBajt.png" alt=""></p>
-<h2 id="新建一篇博客，在cmd执行命令：hexo-new-post-“博客名”"><a href="#新建一篇博客，在cmd执行命令：hexo-new-post-“博客名”" class="headerlink" title="新建一篇博客，在cmd执行命令：hexo new post “博客名”"></a>新建一篇博客，在cmd执行命令：hexo new post “博客名”</h2><p>这时候在文件夹_posts目录下将会看到已经创建的文件</p>
-<p>在生成以及部署文章之前，需要安装一个扩展：npm install hexo-deployer-git –save</p>
-<p>使用编辑器编好文章，那么就可以使用命令：hexo d -g，生成以及部署了</p>
-<p>署成功后访问你的地址：http://用户名.github.io。那么将看到生成的文章<img src="https://i.imgur.com/eu501To.png" alt=""><br>hexo+github搭建博客完结</p>
-
-          
+<h4 id="Github新建项目"><a href="#Github新建项目" class="headerlink" title="Github新建项目"></a>Github新建项目</h4><p>项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initialize this repository with a README<br><img src="https://i.imgur.com/hIYU8Li.png" alt=""><br>在建好的项目右侧有个settings按钮，点击它，向下拉到GitHub Pages，你会看到那边有个网址，你将会惊奇的发现该项目已经被部署到网络上，能够通过外网来访问它。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/03/使用hexo+github搭建博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
     
     
     
