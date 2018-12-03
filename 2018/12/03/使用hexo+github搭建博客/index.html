@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="电脑系统：window 10 家庭版，64位 ##1.安装node.js（最新版）和node.js环境  ## 成功界面 2.安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择不懂看下面链接或者自行百度https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html  3注册Git账号到github官网">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用hexo+github搭建博客">
+<meta property="og:url" content="http://yoursite.com/2018/12/03/使用hexo+github搭建博客/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="电脑系统：window 10 家庭版，64位 ##1.安装node.js（最新版）和node.js环境  ## 成功界面 2.安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择不懂看下面链接或者自行百度https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html  3注册Git账号到github官网">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.imgur.com/RDlkmu5.png">
+<meta property="og:image" content="https://i.imgur.com/4DehCOS.png">
+<meta property="og:image" content="https://i.imgur.com/hIYU8Li.png">
+<meta property="og:image" content="https://i.imgur.com/lsmAo5T.png">
+<meta property="og:image" content="https://i.imgur.com/u7rKlkf.png">
+<meta property="og:image" content="https://i.imgur.com/KYB5LPM.jpg">
+<meta property="og:image" content="https://i.imgur.com/zNszEJM.png">
+<meta property="og:image" content="https://i.imgur.com/4tlBajt.png">
+<meta property="og:image" content="https://i.imgur.com/eu501To.png">
+<meta property="og:updated_time" content="2018-12-03T11:25:01.234Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用hexo+github搭建博客">
+<meta name="twitter:description" content="电脑系统：window 10 家庭版，64位 ##1.安装node.js（最新版）和node.js环境  ## 成功界面 2.安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择不懂看下面链接或者自行百度https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html  3注册Git账号到github官网">
+<meta name="twitter:image" content="https://i.imgur.com/RDlkmu5.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/12/03/使用hexo+github搭建博客/">
+
+
+
+
+
+  <title>使用hexo+github搭建博客 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/03/使用hexo+github搭建博客/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">使用hexo+github搭建博客</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-03T19:06:16+08:00">
+                2018-12-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/12/03/使用hexo+github搭建博客/" class="leancloud_visitors" data-flag-title="使用hexo+github搭建博客">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>电脑系统：window 10 家庭版，64位</p>
+<p>##1.安装node.js（最新版）和node.js环境  ##<br><img src="https://i.imgur.com/RDlkmu5.png" alt=""></p>
+<p>成功界面</p>
+<h2 id="2-安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择"><a href="#2-安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择" class="headerlink" title="2.安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择"></a>2.安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择<img src="https://i.imgur.com/4DehCOS.png" alt=""></h2><p>不懂看下面链接或者自行百度<br><a href="https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html</a> </p>
+<h2 id="3注册Git账号"><a href="#3注册Git账号" class="headerlink" title="3注册Git账号"></a>3注册Git账号</h2><p>到github官网注册账号（过程有点麻烦，但还是可以的）</p>
+<h2 id="配置SSH-Key"><a href="#配置SSH-Key" class="headerlink" title="配置SSH Key"></a>配置SSH Key</h2><p>注册完之后需要添加 SSH Key。<br>SSH Key是一个认证，让github识别绑定这台机器，允许这台机器无需密码提交，修改项目。执行如下命令：</p>
+<h4 id="cd-ssh"><a href="#cd-ssh" class="headerlink" title="cd~/.ssh"></a>cd~/.ssh</h4><p>~这个符号，表示在用户目录下<br>执行代码如果提示：No such file or directory 说明你是第一次使用git。</p>
+<h2 id="生产新的SSH-Key配置"><a href="#生产新的SSH-Key配置" class="headerlink" title="生产新的SSH Key配置"></a>生产新的SSH Key配置</h2><p>在Git Bash(在任意文件夹中鼠标右击选择Git Bash Here打开)执行代码</p>
+<h4 id="ssh-keygen-t-rsa-C-“自己的邮箱号”"><a href="#ssh-keygen-t-rsa-C-“自己的邮箱号”" class="headerlink" title="ssh-keygen -t rsa -C “自己的邮箱号”"></a>ssh-keygen -t rsa -C “自己的邮箱号”</h4><p>成功后会生成个文件id_rsa（私钥）。然后找到个文件，默认都在C盘 &gt; 用户 &gt; xxx &gt; .ssh 里面 （xxx是计算机用户名字）<br>然后用记事本把id_rsa这个文件打开，全选复制出来；<br>然后打开在github上添加SSH Key，登录github账号，点击右上角用户头像，选择setting（设置）&gt; SSH and GPG keys &gt; NewSSH key<br>然后把刚才复制的内容粘贴到key这里就可以了，title填不填都行。</p>
+<h4 id="Github新建项目"><a href="#Github新建项目" class="headerlink" title="Github新建项目"></a>Github新建项目</h4><p>项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initialize this repository with a README<br><img src="https://i.imgur.com/hIYU8Li.png" alt=""><br>在建好的项目右侧有个settings按钮，点击它，向下拉到GitHub Pages，你会看到那边有个网址，你将会惊奇的发现该项目已经被部署到网络上，能够通过外网来访问它。<a id="more"></a></p>
+<p>##安装hexo<br>我是在D盘建了一个blog文件夹。然后通过Git Bash进入到该文件夹里面         输入npm install hexo -g，开始安装Hexo。</p>
+<p>   输入hexo -v，检查hexo是否安装成功</p>
+<p>   输入hexo init，初始化该文件夹（必须文件夹是空的）</p>
+<h2 id="看到后面的“Start-blogging-with-Hexo！就是成功了”"><a href="#看到后面的“Start-blogging-with-Hexo！就是成功了”" class="headerlink" title="看到后面的“Start blogging with Hexo！就是成功了”"></a>看到后面的“Start blogging with Hexo！就是成功了”</h2><p>输入npm install，安装所需要的组件（会出现一些代码，没有的应该是出问题了）我就是网络代理出现了问题。</p>
+<p>   有问题可以试试npm config get registry</p>
+<p>   输入hexo g，首次体验Hexo</p>
+<p>   输入hexo s，开启服务器，访问该网址，正式体验Hexo<br><img src="https://i.imgur.com/lsmAo5T.png" alt=""><br>问题：假如页面一直无法跳转，那么可能端口被占用了。此时我们ctrl+c停止服务器，接着输入“hexo server -p 端口号”来改变端口号</p>
+<p> <img src="https://i.imgur.com/u7rKlkf.png" alt=""><br>出现如上图就成功了</p>
+<h2 id="将Hexo与Github-page联系起来，设置Git的user-name和email（如果是第一次的话）"><a href="#将Hexo与Github-page联系起来，设置Git的user-name和email（如果是第一次的话）" class="headerlink" title="将Hexo与Github page联系起来，设置Git的user name和email（如果是第一次的话）"></a>将Hexo与Github page联系起来，设置Git的user name和email（如果是第一次的话）</h2><h4 id="git-confing-–global-user-name-“用户名”"><a href="#git-confing-–global-user-name-“用户名”" class="headerlink" title="git confing –global user.name “用户名”"></a>git confing –global user.name “用户名”</h4><h4 id="git-config-–global-user-email-“邮箱号”"><a href="#git-config-–global-user-email-“邮箱号”" class="headerlink" title="git config –global user.email “邮箱号”"></a>git config –global user.email “邮箱号”</h4><p>输入cd ~/.ssh，检查是否由.ssh的文件夹</p>
+<p>输入ls，列出该文件下的内容。<br>出现id-rsa  ……..  known-hosts就成功了</p>
+<p> 输入ssh-keygen -t rsa -C “<a href="mailto:91797406500@qq.com" target="_blank" rel="noopener">91797406500@qq.com</a>”，连续三个回车，生成密钥，最后得到了个文件：id_rsa和（默认存储路径是：C:\Users\Administrator.ssh）。<br><img src="https://i.imgur.com/KYB5LPM.jpg" alt=""><br>y继续</p>
+<p>输入eval “$(ssh-agent -s)”，添加密钥到ssh-agent</p>
+<p>再输入ssh-add ~/.ssh/id_rsa，添加生成的SSH key到ssh-agent</p>
+<p>登录Github，点击头像下的settings，添加ssh</p>
+<p>新建一个new ssh key，将id_rsa文件里的内容复制上去</p>
+<p>输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
+<p>配置Deployment，在其文件夹中，找到_config.yml文件，修改repo值（在末尾）<img src="https://i.imgur.com/zNszEJM.png" alt=""></p>
+<p>repo值是你在github项目里的ssh（右下角）<img src="https://i.imgur.com/4tlBajt.png" alt=""></p>
+<h2 id="新建一篇博客，在cmd执行命令：hexo-new-post-“博客名”"><a href="#新建一篇博客，在cmd执行命令：hexo-new-post-“博客名”" class="headerlink" title="新建一篇博客，在cmd执行命令：hexo new post “博客名”"></a>新建一篇博客，在cmd执行命令：hexo new post “博客名”</h2><p>这时候在文件夹_posts目录下将会看到已经创建的文件</p>
+<p>在生成以及部署文章之前，需要安装一个扩展：npm install hexo-deployer-git –save</p>
+<p>使用编辑器编好文章，那么就可以使用命令：hexo d -g，生成以及部署了</p>
+<p>署成功后访问你的地址：http://用户名.github.io。那么将看到生成的文章<img src="https://i.imgur.com/eu501To.png" alt=""><br>hexo+github搭建博客完结</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/03/win10下安装Java JDK及配置环境变量/" rel="next" title="win10下安装Java JDK及配置环境变量">
+                <i class="fa fa-chevron-left"></i> win10下安装Java JDK及配置环境变量
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/03/网页创建/" rel="prev" title="如何创建网页">
+                如何创建网页 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择"><span class="nav-number">1.</span> <span class="nav-text">2.安装Git和Git环境安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3注册Git账号"><span class="nav-number">2.</span> <span class="nav-text">3注册Git账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置SSH-Key"><span class="nav-number">3.</span> <span class="nav-text">配置SSH Key</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#cd-ssh"><span class="nav-number">3.0.1.</span> <span class="nav-text">cd~/.ssh</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#生产新的SSH-Key配置"><span class="nav-number">4.</span> <span class="nav-text">生产新的SSH Key配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ssh-keygen-t-rsa-C-“自己的邮箱号”"><span class="nav-number">4.0.1.</span> <span class="nav-text">ssh-keygen -t rsa -C “自己的邮箱号”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Github新建项目"><span class="nav-number">4.0.2.</span> <span class="nav-text">Github新建项目</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#看到后面的“Start-blogging-with-Hexo！就是成功了”"><span class="nav-number">5.</span> <span class="nav-text">看到后面的“Start blogging with Hexo！就是成功了”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将Hexo与Github-page联系起来，设置Git的user-name和email（如果是第一次的话）"><span class="nav-number">6.</span> <span class="nav-text">将Hexo与Github page联系起来，设置Git的user name和email（如果是第一次的话）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#git-confing-–global-user-name-“用户名”"><span class="nav-number">6.0.1.</span> <span class="nav-text">git confing –global user.name “用户名”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git-config-–global-user-email-“邮箱号”"><span class="nav-number">6.0.2.</span> <span class="nav-text">git config –global user.email “邮箱号”</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建一篇博客，在cmd执行命令：hexo-new-post-“博客名”"><span class="nav-number">7.</span> <span class="nav-text">新建一篇博客，在cmd执行命令：hexo new post “博客名”</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("", "");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
